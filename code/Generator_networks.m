@@ -34,3 +34,10 @@ for i = 1 : size(matrix_vec,1)
     class = ['digraph_',mat2str(edge_num)];
     eval([class, '= [eval(class); v];']); 
 end
+
+% the resulting digraph_5 ~ digraph_20 are saved in 'matrix_vec.mat'
+
+%% get rid of isomorphic digraphs to obtain the final results
+for edge_num = 5 : 20
+    check_isomorphism(edge_num)
+end
