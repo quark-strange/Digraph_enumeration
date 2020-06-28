@@ -1,3 +1,6 @@
+% this script generates all the strongly connected digraphs excluding isomorphisms.
+
+
 % number of vertices
 n = 5;
 
